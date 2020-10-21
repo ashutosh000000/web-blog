@@ -1,0 +1,54 @@
+.d3
+{
+font-size: 20px;
+font-family: "Maiandra GD";
+padding: 10px;
+height: 220px;
+width: 100%;
+background-color: #2F4F4F;
+
+}
+
+.d2
+{
+text-indent: 960px;
+
+/*text-align: right;*/
+
+height: 30px;
+width: 100%;
+background-color: #6A5ACD;
+color: #ADFF2F;
+font-size: 25px;
+font-family: "Myriad Hebrew";
+}
+
+.d1
+{
+font-size: 20px;
+font-family: "Maiandra GD";
+padding: 10px;
+height: 200px;
+width: 100%;
+background-color: #2F4F4F;
+}
+
+.sp
+{
+font-family: "Ink Free";
+font-size: 30px;
+color: #FAEBD7;
+text-shadow: -3px -3px 4px #000000;
+letter-spacing: 0.5px;
+word-spacing: 5px;
+border: 5px hidden #EB8046;
+
+
+padding: 10px;
+/*
+border-width: 12px;
+border-style: solid; 
+*/
+background-color: #EB8046;
+
+}
