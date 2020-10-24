@@ -100,4 +100,67 @@ The default value of border-style is none, which defines no border.
 There are various styles supported for the border-style property: dotted, dashed, double, etc. The example below illustrates the differences between them.
 
 In CSS, it is possible to specify different borders for different sides, using the following properties: border-top-style, border-right-style, border-bottom-style, and border-left-style for the corresponding sides.
+
+The background-image Property
+
+The background-image property sets one or several background images in an element. Let's set a background-image for the <body> element.
+
+The url specifies the path to the image file. Both relative and absolute paths are supported.
+
+By default, a background-image is placed at the top-left corner of an element, and is repeated both vertically and horizontally to cover the entire element.
+
+The background-image Property
+
+Background-image can be set not only for the whole page, but for individual elements, as well.
+Below we set a background image for the <p> element.
+
+
+To specify more than one image, just separate the URLs with commas.
+
+
+
+
+
+
+
+
+The CSS Box Model
+
+All HTML elements can be considered as boxes. The CSS box model represents the design and layout of the site. It consists of margins, borders, paddings, and the actual content.
+
+The properties work in the same order: top, right, bottom, and left.
+
+The image below illustrates the box model:
+
+
+
+
+
+
+
+More on Box Models
+
+Every element of the webpage is a box.
+
+CSS uses the box model to determine how big the boxes are and how to place them.
+The box model is also used to calculate the actual width and height of the HTML elements.
+
+Total Width of an Element
+
+When working with boxes, it is important to understand how the total width of an element is calculated.
+For example, the total width of the box with paddings will be the sum of width plus padding left and padding right.
+
+
+Here is another box with margins, border, and paddings.
+The total width is the sum of left and right margins, left and right borders, left and right paddings, and the actual width of the content.
+
+When you set the width and height properties of an element with CSS, you set the width and height of the content area.
+When setting a background-color to a box, it covers the content area, as well as the padding.
+
+Total Height of an Element
+
+The total height of an element is calculated the same way as the width.
+The example below is the same box from the previous lesson with padding, border and margin.
+
+To summarize, Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin
 */
