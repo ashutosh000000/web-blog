@@ -9,7 +9,7 @@ color: #00BFFF;
 
 .quote
 {
-
+text-align: rught;
 background-color: #6A5ACD;
 padding: 3px;
 font-size: 25px;
@@ -82,3 +82,7 @@ text-align: right;
 }
 */
 
+.d2
+{
+text-indent: 960px;
+}
