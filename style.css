@@ -28,6 +28,20 @@ width: 100%;
 background-color: #2F4F4F;
 
 }
+.t1
+{
+border-collapse: seperated;
+border-spacing: 20px 3px;
+empty-cells: hide;
+}
+
+.selected
+{
+background-color: #FFD700;
+color: #000080;
+font-size: 23px;
+}
+
 
 .d1
 {

@@ -163,4 +163,58 @@ The total height of an element is calculated the same way as the width.
 The example below is the same box from the previous lesson with padding, border and margin.
 
 To summarize, Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin
+
+
+
+
+
+The Table Properties
+
+The look of an HTML table can be greatly improved with CSS.
+
+The border-collapse property specifies whether the table borders are collapsed into a single border or separated as default. If the borders are separate, the border-spacing property can be used to change the spacing.
+
+The caption-side Property
+
+The caption-side property specifies the position of a table caption. The values can be set as top or bottom.
+In the example below, we specify the placement of a table caption to top.
+
+The empty-cells Property
+
+The empty-cells property specifies whether or not to display borders and background on empty cells in a table.
+Possible values are:
+show: the borders of an empty cell are rendered
+hide: the borders of an empty cell are not drawn
+
+Here is the empty-cells property that is used to hide borders of empty cells in the <table> element.
+
+
+
+
+
+
+
+
+
+Setting Styles to Links
+
+Links can be styled with any CSS property (e.g., color, font-family, background, etc.).
+In addition, links can be styled differently, depending on what state they are in. The following pseudo selectors are available:
+a:link - defines the style for normal unvisited links
+a:visited - defines the style for visited links
+a:active - a link becomes active once you click on it
+a:hover - a link is hovered when the mouse is over it
+
+When setting the style for several link states, there are some order rules:
+- a:hover MUST come after a:link and a:visited
+- a:active MUST come after a:hover
+
+Links' Text Decoration
+
+By default, text links are underlined by the browser.
+One of the most common uses of CSS with links is to remove the underline. In the example below, the text-decoration property is used to remove the underline.
+
+The following properties are used to control the look and feel of links:
+border:none - removes border from images with links
+outline:none - removes the dotted border on clicked lines in IE
 */
