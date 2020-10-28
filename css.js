@@ -217,4 +217,104 @@ One of the most common uses of CSS with links is to remove the underline. In the
 The following properties are used to control the look and feel of links:
 border:none - removes border from images with links
 outline:none - removes the dotted border on clicked lines in IE
+
+
+
+
+
+
+
+The cursor Property Values
+
+There are numerous other possible values for the cursor property, such as:
+default - default cursor
+crosshair - cursor displays as crosshair
+pointer - cursor displays hand icon
+The list of possible values is quite long. 
+
+Setting the Mouse Cursor Style
+
+CSS allows you to set your desired cursor style when you mouse over an element. For example, you can change your cursor into a hand icon, help icon, and much more, rather than using the default pointer.
+
+
+
+
+
+
+
+display:none
+
+display:none hides an element, so it does not take up any space. The element will be hidden, and the page will be displayed as if the element is not there.
+
+There are plenty of other display values, such as list-item, table, table-cell, table-column, grid, etc. Just play with values to see the difference. 
+
+
+
+
+
+
+The visibility Property
+
+The visibility property specifies whether an element is visible or hidden. The most common values are visible and hidden.
+
+Hiding an element can be done by setting the display property to "none" or the visibility property to "hidden". However, notice that these two methods produce different results:
+visibility:hidden hides an element, but it will still take up the same space as before. The element will be hidden, but it will still affect the layout:
+
+
+
+
+
+
+
+
+Positioning Elements
+
+The CSS positioning properties allow you to position an element. It can also place an element behind another, and specify what should happen when an element's content is too big.
+
+Elements can be positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the positioning method.
+
+Static Positioning
+HTML elements are positioned static by default. A static positioned element is always positioned according to the normal flow of the page.
+
+p.position_static {
+   position:static;
+   top: 30px;
+   right: 5px;
+   color: red;
+}
+
+Static positioned elements are not affected by the top, bottom, left, and right properties.
+
+
+
+Relative Positioning
+
+A relative positioned element is positioned relative to its normal position.
+The properties top, right, bottom, and left can be used to specify how the rendered box will be shifted.
+
+
+The content of relatively positioned elements can be moved and overlap other elements, but the reserved space for the element is still preserved in the normal flow.
+This value cannot be used for table cells, columns, column groups, rows, row groups, or captions.
+Absolute Positioning
+An absolute position element is positioned relative to the first parent element that has a position other than static. If no such element is found, the containing block is <html>.
+
+Absolutely positioned elements are removed from the normal flow. The document and other elements behave like the absolutely positioned element does not exist.
+Absolutely positioned elements can overlap other elements.
+
+
+
+
+
+
+
+
+Floating
+
+With CSS float, an element can be pushed to the left or right, allowing other elements to wrap around it.
+Float is often used with images, but it is also useful when working with layouts.
+The values for the float property are left, right, and none.
+Left and right float elements in those directions, respectively. none (the default) ensures that the element will not float.
+Below is an example of an image that is floated to the right.
+
+Elements are floated horizontally, meaning that an element can only be floated left or right, not up or down.
 */

@@ -1,3 +1,20 @@
+.a2:visited
+{
+color: #000000;
+}
+
+.a2:link
+{
+text-decoration: none;	
+/*background-color: #FFFF00;*/
+}
+
+.a2:hover
+{
+font-size: 27px;
+color: #A0522D;
+cursor: pointer;
+}
 
 
 .ulc
@@ -73,6 +90,18 @@ border-style: solid;
 background-color: #EB8046;
 
 }
+
+.dl
+{
+hight: 100px;
+width: 400px;
+backgtound-color: #FFFF00;
+}
+
+
+
+
+
 
 
 
