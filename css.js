@@ -317,4 +317,89 @@ Left and right float elements in those directions, respectively. none (the defau
 Below is an example of an image that is floated to the right.
 
 Elements are floated horizontally, meaning that an element can only be floated left or right, not up or down.
+
+
+
+
+
+
+
+Clearing the Float
+
+Elements that come after the floating element will flow around it. To avoid this, use the clear property.
+The clear property specifies the sides of an element where other floating elements are not allowed to be.
+
+In the example below, if we set the float property to the div, only the paragraph that comes after the div will be wrapped around the image.
+
+
+Using clear
+
+Use the values right, left, and both to specify the sides of an element where other floating elements are not allowed to be.
+
+The default value is none, which allows floating elements on both sides.
+
+Clearing Floats
+
+both is used to clear floats coming from either direction.
+
+The HTML:This paragraph is above the div element 
+and is not affected by the float right property. 
+<br/><br/>
+<div class="floating">
+   <img src="css_logo.png" />
+</div>
+This paragraph comes after the div element 
+and is affected by the float right property. 
+<br/><br class="clearing"/>
+This paragraph is out of the floating group 
+and is not affected by the float right property.
+<br/> <br/>
+The CSS:
+.floating {
+   float: right;
+}
+.clearing {    
+   clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+The overflow Property
+
+As discussed earlier, every element on the page is a box. If the height of the box is not set, the height of that box will grow as large as necessary to accommodate the content.
+
+
+The CSS overflow property specifies the behavior that occurs when an element's content overflows the element's box.
+
+
+
+
+
+
+
+The overflow Property
+
+As discussed earlier, every element on the page is a box. If the height of the box is not set, the height of that box will grow as large as necessary to accommodate the content.
+
+The CSS overflow property specifies the behavior that occurs when an element's content overflows the element's box.
+
+The overflow Property Values
+
+There are four values for the overflow property: visible (the default value), scroll, hidden, and auto.
+
+The value scroll results in clipped overflow, but a scrollbar is added, so the rest of the content may be seen.
+
+auto and hidden
+
+auto - If overflow is clipped, a scroll-bar should be added to make it possible to see the rest of the content.
+hidden - The overflow is clipped, and the rest of the content will be invisible.
+
+The default value for the overflow property is visible.
 */
