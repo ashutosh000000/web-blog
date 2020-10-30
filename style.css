@@ -40,9 +40,10 @@ color: #ADFF2F;
 font-size: 20px;
 font-family: "Maiandra GD";
 padding: 10px;
-height: 220px;
+height: 240px;
 width: 100%;
 background-color: #2F4F4F;
+border-radius: 33px;
 
 }
 .t1
@@ -68,6 +69,36 @@ padding: 10px;
 height: 200px;
 width: 100%;
 background-color: #2F4F4F;
+border-radius: 33px;
+}
+
+
+.name
+{
+position: fixed;
+left: 430px;
+}
+
+.email
+{
+position: relative;
+left: 430px;
+top: 14px;
+}
+
+.blog
+{
+position: relative;
+top: 28px;
+left: 430px;
+}
+
+
+.send
+{
+position: absolute;
+left: 430px;
+top: 34px;
 }
 
 
@@ -80,7 +111,8 @@ text-shadow: -3px -3px 4px #000000;
 letter-spacing: 0.5px;
 word-spacing: 5px;
 border: 5px hidden #EB8046;
-
+border-radius: 23px;
+box-shadow:inset -3px 3px 8px #FFFFFF,-3px 3px 8px #66CDAA;
 
 padding: 10px;
 /*
@@ -124,6 +156,14 @@ font-family: "Myriad Hebrew";
 text-align: right;
 }
 */
+
+/*.fo
+{
+position: absolute;
+left: 230px;
+top: 20px;
+}*/
+
 
 .d2
 {

@@ -18,11 +18,19 @@ background-attachment: fixed;
 }
 .d1
 {
+border-radius: 13px;
 height: 120px;
 width: 100%;
 background-color: white;
+box-shadow: 2px 2px 1px 1px hsl(307, 80%, 61%);
 }
 
+.s1
+{
+position: relative;
+top: 6px;
+left: 30px;
+}
 span
 {
 font-family: "Matura MT Script Capitals";
@@ -31,7 +39,7 @@ color: #42C0DD;
 text-align:100px;
 vertical-align:10px;
 text-decoration:blink;
-text-shadow: rgba(0,0,255,1) -0.5pc -0.5pc 5pc;
+text-shadow: hsl(135, 53%, 77%) -0.5pc -0.5pc 5pc ;
 letter-spacing:2px;
 }
 
@@ -51,8 +59,9 @@ background-color:6600ff;
 </head>
 
 <body>
-<div class="d1"><h1><span>facebook</span></h1>
+<div class="d1"><h1><span class= "s1">facebook</span></h1>
 </div>
+<br/>
 <div>
 <button onclick="prev()">prev</button>
 <img id="slider" src="61475.jpg" width="200px" height="100px" border="1px" bcolor="red"></img>

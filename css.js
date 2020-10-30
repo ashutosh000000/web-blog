@@ -402,4 +402,194 @@ auto - If overflow is clipped, a scroll-bar should be added to make it possible 
 hidden - The overflow is clipped, and the rest of the content will be invisible.
 
 The default value for the overflow property is visible.
+
+
+
+
+
+
+
+
+Assigning the z-index Property
+
+Assigning a higher z-index value to the blue div and a lower z-index value to the red div will result in the following:
+
+The z-index works only on positioned elements (position:absolute, position:relative, or position:fixed).
+
+
+
+
+
+
+
+
+
+
+
+
+
+CSS3
+
+CSS3 is the latest standard for CSS.
+CSS3 is completely backwards-compatible with earlier CSS versions.
+
+Some of the most significant new features are:
+Border radius - allows us to create rounded corners for elements.
+Border images - allows us to specify an image as the border around an element.
+Multiple backgrounds - applies multiple backgrounds to elements.
+Animations and effects, and much more!
+There are lots of other great features that will be discussed in upcoming lessons.
+
+CSS3: New Features
+
+To make web development easier and faster, CSS3 introduces additional new features, including the following:
+
+Box Shadow
+With the box-shadow property, you can attach one or more shadows to an element by specifying values for color, size, blur, and offset.
+
+Gradients
+CSS3 gradients allow us to set the background color of the element to a gradient. Two types of gradients are available: Linear and Radial.
+Most of the new features have been implemented by major web browsers, so you can already enjoy the power of CSS3.
+
+CSS3: New Features
+
+Transforms allow you to rotate, scale, move, and skew elements.
+
+Another popular feature is Transitions which allows you to animate from one CSS property value to another. You can combine it with transforms and animate the element's position, rotation, or scale.
+
+The property attracting the most attention is Animations.
+CSS Animations have their own specifications, and they allow you to create keyframes, set duration, easing, and more.
+Most of the new features have been implemented by major web browsers, so you can already enjoy the power of CSS3.
+
+
+
+
+
+
+
+
+
+
+CSS Vendor Prefixes
+
+CSS vendor prefixes or CSS browser prefixes are a way for browser makers to add support for new CSS features during periods of testing and experimentation. Browser prefixes are used to add new features that may not be part of the final and formal CSS specification.
+
+For example, the prefix for Safari and Chrome is -webkit. The border-radius property is currently supported in Chrome, Safari, and Mozilla, as long as it is accompanied by the browser prefix.
+To specify the border-radius in Chrome and Safari, the following syntax is used:
+
+
+The prefix is added to the property to make it work in the unsupported browsers. So, you might end up with multiple definitions of the same property, each with the specific browser prefix.
+While most browsers today will work without prefixes, it is essential to know these for backwards capability and understanding older codes.
+
+-webkit-border-radius: 24px;
+
+firefox -moz-
+safari  -webkit-
+chrome  -webkit-
+opera   -o-
+internet explorer  -ms
+
+It might feel annoying and repetitive to have to write the properties two to five times to get them to work in all browsers, but it's temporary. As browsers improve, they add support for the standards based version of the properties, and you can remove the prefixed versions.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The border-radius Property
+
+With CSS3, you can give any element "rounded corners" by using the border-radius property.
+
+Specific border radius values can be applied for the border-radius property in the following order: top-left, top-right, bottom-right, bottom-left. 
+
+The value of border-radius can also be specified in percentages.
+
+Creating a Circle
+
+A rectangle can be turned into a circle using only CSS.
+To create a circle, the border radius should be half of the height and the width.
+
+The rectangle in the example below has a width and height of 200px. By setting the border radius to 100px, the corners will be rounded to form a circle:
+
+
+
+
+
+
+
+
+
+
+
+
+
+The box-shadow Property
+
+The CSS3 box-shadow property applies shadow to elements.
+Components of the box-shadow property are decoded by browsers in the following manner:
+- The first length for the horizontal offset will cast the shadow to the right of the box (required)
+- The second length is for the vertical offset that will cast the shadow to below the box (required)
+- The color of the shadow (optional)
+
+
+
+
+
+
+
+
+
+
+Creating an Inner Shadow
+
+The "inset" keyword allows to draw an inner shadow in the box. To show an inset shadow, just add the inset keyword:
+box-shadow: inset 10px 10px 5px #888888;
+
+You can simultaneously create inner and outer shadows by separating each shadow with a comma.
+
+Layering Multiple Shadows
+
+You can define as many shadows for the same box as you want by writing all of them comma-separated in the same rule.
+
+In the example below, two inner shadows have been created by separating each shadow with a comma.
+
+In case we specify more than one value, the one which comes last will be positioned at the back of all shadows.
+Here is an example:
+
+
+
+
+
+
+
+
+
+
+Transparency Effect
+
+Before CSS3, transparent background images were used to create transparency effects. The new features of CSS3 now make it easier to create transparency effects.
+
+CSS supports color names, hexadecimal, and RGB colors.
+In addition, CSS3 introduces the following:
+
+RGBA Colors
+RGBA color values are an extension of RGB color values with an alpha channel, which specifies the opacity for a color.
+An RGBA color value is specified with: rgba(red, green, blue, alpha). The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).
+
+HSL (Hue, Saturation, Lightness) Colors
+An HSL color value is specified with: hsl(hue, saturation, lightness).
+Hue is a degree on the color wheel ranging from 0 to 360
+0 (or 360) is red, 120 is green, 240 is blue.
+Saturation is a percentage value: 100% is the full color.
+Lightness is also a percentage; 0% is dark (black) and 100% is white. HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity for a color (just like RGBA).
+
+Some of the properties used (like the background gradients) will be discussed in the upcoming lessons.
 */
