@@ -21,17 +21,8 @@ color: #A0522D;
 cursor: pointer;
 }
 
-div div p ol li
-{
-display: inline-block;
 
-}
 
-div div p ol li a
-{
-text-decoration: none;
-
-}
 .ulc
 {
 list-style-type: square;
@@ -47,6 +38,9 @@ padding: 3px;
 font-size: 25px;
 font-family: "Myriad Hebrew";
 color: #ADFF2F;
+position: relative;
+left: 960px;
+border-radius: 9px;
 }
 
 
@@ -86,12 +80,30 @@ width: 100%;
 background-color: #2F4F4F;
 border-radius: 33px;
 }
+input::-moz-selection
+{
+background-color: lightgreen;
+color: #ffffff;
+}
+
+textarea::-moz-selection
+{
+background-color: lightgreen;
+color: #ffffff;
+}
 
 
 .name
 {
-position: fixed;
+position: relative;
 left: 430px;
+background-color: rgba(255,255,255,0.1);
+font-size: 10px;
+font -family: "Harlow Solid";
+padding: 4px;
+word-spacing: 5px; 
+letter-spacing: 3px;
+border-radius: 6px;
 }
 
 .email
@@ -99,21 +111,41 @@ left: 430px;
 position: relative;
 left: 430px;
 top: 14px;
+background-color: rgba(255,255,255,0.1);
+font-size: 10px;
+font-family: "Harlow Solid";
+padding: 4px;
+word-spacing: 5px;
+letter-spacing: 3px;
+border-radius: 4px;
 }
 
 .blog
 {
 position: relative;
-top: 28px;
+top: 15px;
 left: 430px;
+background-color: rgba(255,255,255,0.1);
+font-size: 15px;
+font-family: "Harlow Solid";
+padding: 4px;
+word-spacing: 5px;
+letter-spacing: 3px;
+border-radius: 9px;
+scroll-bar:hidden;
 }
 
 
-.send
+.submit
 {
-position: absolute;
-left: 430px;
-top: 34px;
+
+position: relative;
+left: 730px;
+top: -40px;
+background-color: red;
+font-size: 15px;
+color: skyblue;
+border-radius: 2px;
 }
 
 

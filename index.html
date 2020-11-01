@@ -3,6 +3,19 @@
 
 <head> 
 <style>
+
+div::-moz-selection
+{
+background-color: green;
+color: #ffffff;
+}
+
+p::-moz-selection
+{
+background-color: green;
+color: #ffffff;
+}
+
 #container
 {
 background:white;
@@ -21,7 +34,7 @@ background-attachment: fixed;
 border-radius: 13px;
 height: 120px;
 width: 100%;
-background-color: white;
+background-color: rgba(255,255,255,0.4);
 box-shadow: 2px 2px 1px 1px #00FFFF,4px 4px 1px 1px hsl(307, 80%, 61%);
 }
 
@@ -41,6 +54,29 @@ vertical-align:10px;
 text-decoration:blink;
 text-shadow: hsl(135, 53%, 77%) -0.5pc -0.5pc 5pc ;
 letter-spacing:2px;
+}
+
+.text
+{
+background-color: rgba(255,255,255,0.2);
+position: relative;
+top: 30px;
+left: 520px;
+color: skyblue;
+font-size: 20px;
+padding: 5px;
+font-family: Cooper;   
+border-radius: 22px;
+}
+.text:hover
+{
+cursor:pointer;
+box-shadow: 0px 0px 25px #000000, inset 0px 0px 1px rgba(255,255,255,0.1);
+}
+
+.dawn
+{
+border-radius: 254px;
 }
 
 #car
@@ -70,13 +106,13 @@ background-color:6600ff;
 
 
 
-<input type="text" id="name" onchange= change()></input>
+<input type="text" id="name" class= "text" onchange= change()></input>
 
 <p id="para">...</p>
 <p><h4 id="para1">Hi There !!</h4></p>	
 <div id="container">
 <div id="box">
-<a href="http://www.google.com" target="_blank"><img id="car" src="carR.png" alt="sorry"/></a></div>
+<a href="https://www.google.com" target="_blank"><img id="car" src="carR.png" alt="sorry"/></a></div>
 </div>
 <p id="date1">howwwww</p>
 <div id="demo" >some content</div></div>
@@ -95,7 +131,7 @@ a.value=a.value.toUpperCase();
 
 <script src="second.js"></script>
 <div>
-<img src="dAwn1.jpg"></img>
+<img src="dAwn1.jpg" class= "dawn"></img>
 <div>
 <h3>sample</h3>
 
