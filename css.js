@@ -592,4 +592,88 @@ Saturation is a percentage value: 100% is the full color.
 Lightness is also a percentage; 0% is dark (black) and 100% is white. HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity for a color (just like RGBA).
 
 Some of the properties used (like the background gradients) will be discussed in the upcoming lessons.
+
+
+
+
+
+
+
+
+
+
+
+
+
+The text-shadow Property
+
+The text-shadow property defines one or more comma-separated shadow effects, to be applied to the text content of the current element.
+
+
+- The offset-x and offset-y values are required for the CSS text-shadow property.
+- The color value is not required, but since the default for the text-shadow is transparent, the text-shadow will not appear unless you specify a color value.
+
+Multiple Text Shadows
+
+The text-shadow style can accept multiple values in a comma-separated list.
+According to CSS2, the shadows are laid down in the order they appear, so if they overlap, the last one that is specified should appear on top. CSS3 has now changed that so they are applied in reverse order.
+
+To create multiple shadows, the shadows are separated with a comma. 
+
+
+To make a text shadow look realistic, remember these few shadow characteristics:
+
+- A shadow which is close to the text is normally not as blurred as a shadow that is far from the text. A shadow that is far from the text usually implies a light source which is also far from the text. 
+- A shadow which is close to the text usually implies that the underlying surface is close, that the light is close, or both. A close shadow is often darker than a distant shadow, because less light can get in between the shape and the underlying surface.
+To remove a text-shadow, set the text-shadow property to none; no shadows will be associated with that element.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Working with Pseudo-Classes
+
+The CSS pseudo-classes allow us to style elements, or parts of elements, that exist in the document tree without using JavaScript or any other scripts. A pseudo-class starts with a ":" (colon).
+The most commonly used pseudo-classes are :first-child and :last-child.
+
+The :first-child pseudo-class matches an element that is the first child element of some other element.
+In the following example, the selector matches any <p> element that is the first child of the div element:
+
+
+The :last-child pseudo-class matches an element that is the last child element of some other element. 
+
+
+
+
+
+
+
+
+
+
+
+Working with Pseudo Elements
+
+Pseudo elements are used to select specific parts of an element.
+There are five pseudo elements in CSS, each starting with a double colon (::):
+
+::first-line - the first line of the text in a selector
+::first-letter - the first letter of the text in a selector
+::selection - selects the portion of an element that is selected by a user
+::before - inserts some content before an element
+::after - inserts some content after an element
+
+In the example below, the ::first-line pseudo element is used to style the first line of our text: 
+
+
+
+
 */

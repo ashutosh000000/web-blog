@@ -1,3 +1,8 @@
+p::-moz-selection
+{
+background-color: #00ffdd;
+color: #FFFFFF; 
+}
 .a2:visited
 {
 color: #000000;
@@ -16,7 +21,17 @@ color: #A0522D;
 cursor: pointer;
 }
 
+div div p ol li
+{
+display: inline-block;
 
+}
+
+div div p ol li a
+{
+text-decoration: none;
+
+}
 .ulc
 {
 list-style-type: square;
