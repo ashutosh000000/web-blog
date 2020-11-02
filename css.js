@@ -673,7 +673,20 @@ There are five pseudo elements in CSS, each starting with a double colon (::):
 
 In the example below, the ::first-line pseudo element is used to style the first line of our text: 
 
+Working with Pseudo Elements
 
+Using ::before and ::after pseudo elements allows us to add a wide variety of content to the page.
+
+In the example below, the ::before pseudo element is used to add an image before the list.
+
+The CSS:
+p::before {
+   content: url("logo.jpg");
+}
+
+Note the content keyword in the syntax.
+
+If you change the ::before element to ::after in the example above, the images will appear at the end of the list.
 
 
 */
