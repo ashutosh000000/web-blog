@@ -689,4 +689,35 @@ Note the content keyword in the syntax.
 If you change the ::before element to ::after in the example above, the images will appear at the end of the list.
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The @font-face Rule
+
+The @font-face rule allows custom fonts to be loaded into a webpage.
+With the help of this rule, designs are no longer limited to the fonts that are installed on a user's computer.
+
+In Internet Explorer 8 and earlier, the URL must point to an Embedded OpenType (eot) file, while Firefox, Chrome, etc. support True Type Fonts (ttf) fonts and OpenType Fonts (otf). 
+
+In the @font-face rule, you must first define a name for the font (e.g., myFirstFont), and then point to the font file.
+
+Using the @font-face Rule
+
+Each form of the font family must be declared using the @font-face rule. In the example below, a custom font called "Delicious" is loaded and used for the heading.
+
+The question mark fools IE into thinking the rest of the string is a query string and loads just the EOT file. The other browsers follow the spec and select the format they need, based on the src cascade.
+
+
 */
