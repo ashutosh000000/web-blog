@@ -1,22 +1,122 @@
+
+@font-face
+{
+font-family:heavycopper;
+font-weight: bold;
+src:url('ff/heavycopper3d.ttf');
+}
+
+@font-face
+{
+font-family: holysans;
+font-weight: bold;
+src:url('ff/HolySans-Bold.ttf');
+}
+
+@font-face
+{
+font-family: ltreponse;
+font-weight: bold;
+src:url('ff/LTReponseRoundedTwoBold.otf');
+}
+
+@font-face
+{
+font-family: minimal;
+src:url('ff/MinimalFont5x7.ttf');
+}
+
+@font-face
+{
+font-family: mfriend;
+src:url('MonsterFriendFore.otf');
+}
+
+@font-face
+{
+font-family: monstermash;
+src:url('ff/MonsterMash.ttf');
+}
+
+@font-face
+{
+font-family: rockmod;
+src:url('ff/RockMODUS039.ttf');
+}
+
+@font-face
+{
+font-family: rockbucket;
+src:url('ff/RockBuchet-Regular.otf');
+}
+
+@font-face
+{
+font-family: rockin;
+src:url('ff/gomarice_rockin_record.ttf');
+}
+
+@font-face
+{
+font-family: rocko;
+src:url('ff/rocko.ttf');
+}
+
+@font-face
+{
+font-family: rocksg;
+src:url('ff/gomarice_rocks.ttf');
+}
+
+@font-face
+{
+font-family: scarm;
+src:url('ff/SCARM__.TTF');
+}
+
+@font-face
+{
+font-family: bad;
+src:url('ff/BAD.ttf');
+}
+
+@font-face
+{
+font-family: viresg;
+src:url('ff/Vires Gollem.otf');
+}
+
+@font-face
+{
+font-family: bboys;
+src:url('ff/Bad Boys.ttf');
+}
+
+
 p::-moz-selection
 {
 background-color: #00ffdd;
 color: #FFFFFF; 
 }
+
+
+
+.a2:link
+{
+color: #00BFFF;
+text-decoration: none;	
+}
+
+
 .a2:visited
 {
 color: #000000;
 }
 
-.a2:link
-{
-text-decoration: none;	
-/*background-color: #FFFF00;*/
-}
 
 .a2:hover
 {
-font-size: 27px;
+font-size: 33px;
 color: #A0522D;
 cursor: pointer;
 }
@@ -25,31 +125,33 @@ cursor: pointer;
 
 .ulc
 {
+position: relative;
+top: -10px;
 list-style-type: square;
-color: #00BFFF;
+color: #00BFFF;	
 }
 
 
 .quote
 {
-text-align: rught;
+text-align: right;
 background-color: #6A5ACD;
 padding: 3px;
-font-size: 25px;
-font-family: "Myriad Hebrew";
+font-size: 35px;
+font-family: "minimal","Myriad Hebrew";
 color: #ADFF2F;
 position: relative;
-left: 960px;
+left: 920px;
 border-radius: 9px;
 }
 
 
 .d3
 {
-font-size: 20px;
-font-family: "Maiandra GD";
+font-size: 30px;
+font-family: "minimal","Maiandra GD";
 padding: 10px;
-height: 240px;
+height: 300px;
 width: 100%;
 background-color: #2F4F4F;
 border-radius: 33px;
@@ -69,17 +171,23 @@ color: #000080;
 font-size: 23px;
 }
 
+.blog-para
+{
+font-size: 35px;
+}
 
 .d1
 {
-font-size: 20px;
-font-family: "Maiandra GD";
+/*color: #00BFFF;*/
+font-size: 30px;
+font-family: "minimal","Maiandra GD";
 padding: 10px;
-height: 200px;
+height: 240px;
 width: 100%;
 background-color: #2F4F4F;
 border-radius: 33px;
 }
+
 input::-moz-selection
 {
 background-color: lightgreen;
@@ -98,12 +206,16 @@ color: #ffffff;
 position: relative;
 left: 430px;
 background-color: rgba(255,255,255,0.1);
-font-size: 10px;
-font -family: "Harlow Solid";
+font-size: 24px;
+width: 200px;
+height: 23px;
+border: 0.1px solid #808080;
+font-family: "minimal";
 padding: 4px;
 word-spacing: 5px; 
 letter-spacing: 3px;
-border-radius: 6px;
+border-radius: 4px;
+color: #FFD700;
 }
 
 .email
@@ -112,27 +224,35 @@ position: relative;
 left: 430px;
 top: 14px;
 background-color: rgba(255,255,255,0.1);
-font-size: 10px;
-font-family: "Harlow Solid";
+font-size: 24px;
+width: 200px;
+height: 24px;
+border: 0.1px solid #808080;
+font-family: "minimal";
 padding: 4px;
 word-spacing: 5px;
 letter-spacing: 3px;
 border-radius: 4px;
+color: #FFD700;
 }
 
 .blog
 {
 position: relative;
 top: 15px;
-left: 430px;
+left: 230px;
 background-color: rgba(255,255,255,0.1);
-font-size: 15px;
-font-family: "Harlow Solid";
+font-size: 28px;
+width: 800px;
+height: 100px;
+border: 0px solid #808080;
+font-family: "minimal","Harlow Solid";
 padding: 4px;
 word-spacing: 5px;
 letter-spacing: 3px;
 border-radius: 9px;
-scroll-bar:hidden;
+resize: none;
+color: #FFD700;
 }
 
 
@@ -142,19 +262,32 @@ scroll-bar:hidden;
 position: relative;
 left: 730px;
 top: -40px;
-background-color: red;
-font-size: 15px;
-color: skyblue;
+width: 70px;
+height: 20px;
+border: 0px solid #808080; 
+background-color: #008B8B;
+font-size: 20px;
+font-family: "minimal";
+color: #FFD700;
 border-radius: 2px;
 }
 
+.submit:hover
+{
+height: 23px;
+width: 73px;
+font-size: 23px;
+top: -38px;
+left: 728px;
+cursor:pointer;
+}
 
 .sp
 {
-font-family: "Ink Free";
+font-family: "viresg";
 font-size: 30px;
-color: #FAEBD7;
-text-shadow: -3px -3px 4px #000000;
+color: #D3D3D3;
+text-shadow: 3px 3px 4px #000000;
 letter-spacing: 0.5px;
 word-spacing: 5px;
 border: 5px hidden #EB8046;
