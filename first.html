@@ -1,5 +1,18 @@
 <!DOCTYPE html>
 
+<script> 
+function blog()
+{
+var db=document.getElementsById("blog").value;
+var p=document.createElement("p");
+var text=document.createTextNode("first text");
+p.appendChild(text);
+var blogpost=document.getElementById("blog-div");
+blogpost.appendChild(p);
+}
+</script>
+
+
 <html>
 
 <head>
@@ -23,7 +36,7 @@
 
 <div class= "d2"> <span class= "quote">  "Declare variables,not war"  </span> </div>
 </header>
-
+<br/>
 <h1 align="center" class="ff"><span class="sp">My Skills</span></h1>
 <div class= "d1">
 
@@ -51,6 +64,8 @@
 </p>
 </div>
 </div>
+<br/>
+
 
 <h1 align="center" class="ff"><span class="sp">My Daily Routin</span></h1>
 <div class= "d3"><table border="1px" align="center" class= "t1">
@@ -127,18 +142,24 @@
 </table>
 </div>
 
+<br/>
+<div id= "blog-div"></div>
+<br/>
 <h1 align="center" class="ff"><span class="sp">Contact Me</span></h1>
-<form method="POST">
+
+
 <div class= "d1">
+<form method="POST" class= "b-form">
+
 <table class= "fo">
 <input name="name" type="text" placeholder= "name" class= "name"/><br/>
 <input name="email" type="email"  placeholder= "email" class= "email"/><br/>
-<input type="submit" value="SEND" class="submit"/><br/>
-<textarea name="message" placeholder= "your blog" class= "blog">ashutosh</textarea>
-
+<input type="submit" value="SEND" class="submit" onclick=blog()/><br/>
+<textarea name="message" placeholder= "your blog" id= "blog">ashutosh</textarea>
 </table>
-</div>
+
 </form>
+</div>
 
 <div align="center"><h1 align="center" class="ff"><span class="sp">My Media</span></h1>
 <iframe height="150" width="300" src="https://www.youtube.com/watch?v=xn08sKEA29w" allowfullscreen frameborder="0"></iframe>
@@ -168,6 +189,8 @@ ctx.fillText("Ashutosh",10 ,40);
 ctx.strokeText("Ashutosh",20 ,40);
 
 </script>
+
+
 </body>
 </html>
 
@@ -175,3 +198,5 @@ ctx.strokeText("Ashutosh",20 ,40);
 
 
 <script src="hypertext.js"></script>
+
+

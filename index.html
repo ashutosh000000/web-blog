@@ -4,6 +4,12 @@
 <head> 
 <style>
 
+@font-face
+{
+font-family:  minimal;
+src:url('ff/MinimalFont5x7.ttf');
+}
+
 div::-moz-selection
 {
 background-color: green;
@@ -62,11 +68,13 @@ background-color: rgba(255,255,255,0.2);
 position: relative;
 top: 30px;
 left: 520px;
-color: skyblue;
-font-size: 20px;
-padding: 5px;
-font-family: Cooper;   
+color: #00BFFF;
+font-size: 24px;
+padding: 8px;
+font-family: "minimal";   
 border-radius: 22px;
+border: 0px solid #C0C0C0;
+width: 300px;
 }
 .text:hover
 {
@@ -99,9 +107,9 @@ background-color:6600ff;
 </div>
 <br/>
 <div>
-<button onclick="prev()">prev</button>
+<button onclick="prev()" id= "prev">prev</button>
 <img id="slider" src="61475.jpg" width="200px" height="100px" border="1px" bcolor="red"></img>
-<button onclick="next()">next</button>
+<button onclick="next()" id= "next">next</button>
 </div>
 
 
@@ -109,10 +117,13 @@ background-color:6600ff;
 <input type="text" id="name" class= "text" onchange= change()></input>
 
 <p id="para">...</p>
-<p><h4 id="para1">Hi There !!</h4></p>	
+<p><h4 id="para1">Hi There !!</h4>
+</p>	
 <div id="container">
 <div id="box">
-<a href="https://www.google.com" target="_blank"><img id="car" src="carR.png" alt="sorry"/></a></div>
+<a href="https://www.google.com" target="_blank"><img id="car" src="carR.png" alt="sorry"/>
+</a>
+</div>
 </div>
 <p id="date1">howwwww</p>
 <div id="demo" >some content</div></div>

@@ -720,4 +720,77 @@ Each form of the font family must be declared using the @font-face rule. In the 
 The question mark fools IE into thinking the rest of the string is a query string and loads just the EOT file. The other browsers follow the spec and select the format they need, based on the src cascade.
 
 
+
+
+
+
+
+
+
+
+
+
+Creating Linear Gradients
+
+CSS3 gradients enable you to display smooth transitions between two or more specified colors. CSS3 defines two types of gradients: Linear and Radial.
+
+To create a linear gradient, you must define at least two color stops. Color stops are the colors among which you want to render smooth transitions. You can also set a starting point and a direction - or an angle - along with the gradient effect.
+In the example below, the colors blue and black are used to create a linear gradient from top to bottom.
+
+This syntax works in Mozilla (-moz). If you work with a different browser, add the corresponding prefix, so that the browser understands the gradient.
+
+You can use color names, Hex values, RGB, or HSL colors to define the gradient color.
+
+
+
+Color Stops
+
+Colors can be added one after the other, separated with a comma. The browser will then determine each color stop position.
+In the example below, the linear gradient has multiple color stops and runs from top to bottom. 
+
+
+Color stop positions can be specified for each color.
+background:-moz-linear-gradient(blue 20%, yellow 30%, green 85%);
+
+
+In addition to percentages, you can also use px, em, and so on, to specify the color stops.
+If you use the same color stop position for two colors, a sharp line will be created between them.
+
+Direction of the Gradient
+
+The direction of the gradient can be changed.
+In the example below, the first gradient starts at left, moving right; the second one runs from bottom to top.
+
+left, right, top, and bottom are supported values for the gradient direction. You can also use their various combinations to specify direction (e.g., bottom right)
+
+Repeating a Linear-Gradient
+
+The repeating-linear-gradient() function is used to repeat a linear gradient: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Radial Gradients
+
+To create a radial gradient, you must define at least two color stops.
+The radial gradient is defined by its center.
+
+The CSS syntax of the radial gradient looks like this: background: radial-gradient(position, shape or size, color-stops);
+The first value defines the gradient position. We can use a descriptive keyword, such as top, bottom, center, or left; or we can specify, for example, 50% 50% to set the gradient at the center or 0% 0% to set the gradient to start at top left.
+
+The second value defines the shape and the gradient size. There are two arguments to shape gradients: The first is the ellipse, which is the default; and the second is the circle.
+Lastly, the third value defines the color combination.
 */

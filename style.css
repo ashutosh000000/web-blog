@@ -101,8 +101,9 @@ color: #FFFFFF;
 
 
 
-.a2:link
+.a2
 {
+position: absolute;
 color: #00BFFF;
 text-decoration: none;	
 }
@@ -178,6 +179,7 @@ font-size: 35px;
 
 .d1
 {
+position: relative;
 /*color: #00BFFF;*/
 font-size: 30px;
 font-family: "minimal","Maiandra GD";
@@ -203,8 +205,9 @@ color: #ffffff;
 
 .name
 {
-position: relative;
+position: absolute;
 left: 430px;
+top: 20px;
 background-color: rgba(255,255,255,0.1);
 font-size: 24px;
 width: 200px;
@@ -220,9 +223,9 @@ color: #FFD700;
 
 .email
 {
-position: relative;
+position: absolute;
 left: 430px;
-top: 14px;
+top: 74px;
 background-color: rgba(255,255,255,0.1);
 font-size: 24px;
 width: 200px;
@@ -236,10 +239,10 @@ border-radius: 4px;
 color: #FFD700;
 }
 
-.blog
+#blog
 {
-position: relative;
-top: 15px;
+position: absolute;
+top: 125px;
 left: 230px;
 background-color: rgba(255,255,255,0.1);
 font-size: 28px;
@@ -259,9 +262,9 @@ color: #FFD700;
 .submit
 {
 
-position: relative;
+position: absolute;
 left: 730px;
-top: -40px;
+top: 40px;
 width: 70px;
 height: 20px;
 border: 0px solid #808080; 
@@ -277,7 +280,7 @@ border-radius: 2px;
 height: 23px;
 width: 73px;
 font-size: 23px;
-top: -38px;
+top: 38px;
 left: 728px;
 cursor:pointer;
 }
