@@ -793,4 +793,168 @@ The first value defines the gradient position. We can use a descriptive keyword,
 
 The second value defines the shape and the gradient size. There are two arguments to shape gradients: The first is the ellipse, which is the default; and the second is the circle.
 Lastly, the third value defines the color combination.
+
+Setting the Shapes
+
+The shape parameter defines the shape. If you do not define the shape of the radial gradient, it will take the ellipse value by default.
+
+In the example below, we didn't specify the shape of the first div’s radial gradient, but for the second, we set the value to circle.
+Here is what happened:
+
+
+Radial Gradient Position
+
+Essentially, we can use the same method used to specify the location of a background image with the background-position CSS property to specify the location of the ellipse’s center. We specify the horizontal position of the background, and - optionally - the vertical position using either keywords (left, center right, or top, center, bottom), length values, percentage values, or some combination of these.
+
+In the example below, the first gradient starts from the top left corner; in the second, we set 5% to the green, 15 % to the yellow and 60% to the blue. 
+
+
+
+
+
+
+
+
+
+
+Transparent Borders with background-clip
+
+Setting a transparent border on an element will reveal the element’s own background under the border.
+In the example below, we set the borders to be transparent using RGBA, but they actually appear solid gray.
+
+By setting the background-clip property to padding-box, the borders will be made transparent.
+
+Transparency effect is achieved with the background-clip:padding-box. Without it, the background of the box also goes beneath the borders, making it non-transparent.
+
+
+
+
+
+
+
+
+
+
+
+Multiple Backgrounds
+
+The ability to have multiple background images is a new feature in CSS3.
+Multiple background images are specified using a comma-separated list of values for the background-image property. The first image will appear on the top, the last on the bottom.
+
+In the example below, we have two background images: the first is a CSS logo (aligned to the bottom and right); the second is a coding image (aligned to the top-left corner).
+
+Multiple Backgrounds
+
+The position of the background images can be changed, using the background-position property.
+For example:
+div {
+   width: 400px;
+   height: 300px;
+   background-image: url(csslogo.png), url(csscode.jpg);
+   background-position: right top, left top;
+   background-repeat: no-repeat;
+} 
+
+
+Multiple backgrounds can also be specified using the background: shorthand property.
+background: url(csslogo.png) right top no-repeat, 
+url(csscode.jpg) left top no-repeat; 
+
+
+
+
+
+
+
+
+
+
+
+
+The opacity Property
+
+CSS opacity property provides an excellent means of adding opacity to any element.
+In the example below, we set different levels of opacity to the same picture, so you can clearly see the difference. 
+
+The opacity property value must be a number between 0.0 (fully transparent) and 1.0 (fully opaque).s
+
+Opacity in Internet Explorer
+
+To have the opacity property work in all versions of IE, use the filter:alpha(opacity=x) along with the opacity property. x can take a value from 0 to 100.
+The value 0 results in a completely transparent element (i.e., 100% transparent), whereas the value 100 makes the element completely opaque (i.e., 0% transparent).
+
+For example, in order to have the code work properly with IE, when the opacity of the image is set at 0.5, it should look like this:
+
+The alpha filter is a Microsoft-only property, not a standard CSS property.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CSS3 Transitions
+
+CSS3 transitions allow us to change from one property value to another over a given duration.
+transition-property - specifies the property to be transitioned
+transition-duration - specifies the duration over which transitions should occur
+transition-timing-function - specifies how the pace of the transition changes over its duration
+transition-delay - specifies a delay (in seconds) for the transition effect
+
+In the example below, we set the transition property to transform, with a duration of 5 seconds, and with an ease-in timing function that specifies a transition effect with a slow start. transition: transform 5s ease-in;
+Transition effects can be applied to a wide variety of CSS properties, including background-color, width, height, opacity, and many more. 
+
+
+The Transition Property
+
+In the example below, the div element has width and height of 50px, with a green background. We specified a transition effect for the width property, with a duration of 3 seconds:
+
+When the cursor is moused out of the element, it will gradually change back to its original style.
+
+
+
+
+transition-timing-function
+
+The transition-timing-function property specifies the speed curve of the transition effect.
+It can have the following values:
+ease - the animation starts slowly, then accelerates quickly.
+ease-in - starts slowly, then accelerates, and stops abruptly.
+ease-out - starts quickly, but decelerates to a stop.
+ease-in-out - similar to ease, but with more subtle acceleration and deceleration.
+linear - constant speed throughout the animation; often best for color or opacity changes.
+
+Finally, we have cubic-bezier(), which allows you to define your own values in the cubic-bezier function. Possible values are numeric values from 0 to 1.
+transition-timing-function: cubic-bezier(0,0,1,1);
+
+
+
+
+
+
+
+
+
+
+
+
+CSS3 Transforms
+
+CSS3 transforms allow you to translate, rotate, scale, and skew elements.
+A transformation is an effect that lets an element change shape, size, and position.
+CSS3 supports 2D and 3D transformations. Let's take a look at the rotate transformation:
+
+The rotate() method rotates an element clockwise or counter-clockwise, according to a given degree.
+Negative value will result in a counter clockwise rotation. 
+
+Using Negative Values
+
+As previously mentioned, using a positive value will rotate an element clockwise, and using a negative value will rotate the element counter-clockwise. 
 */

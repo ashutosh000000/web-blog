@@ -1,0 +1,264 @@
+@font-face
+{
+font-family: heavycopper;
+font-weight: bold;
+src:url('ff/heavycopper3d.ttf');
+}
+
+@font-face
+{
+font-family: holysans;
+font-weight: bold;
+src:url('ff/HolySans-Bold.ttf');
+}
+
+@font-face
+{
+font-family: ltreponse;
+font-weight: bold;
+src:url('ff/LTReponseRoundedTwoBold.otf');
+}
+
+@font-face
+{
+font-family: minimal;
+src:url('ff/MinimalFont5x7.ttf');
+}
+
+@font-face
+{
+font-family: mfriend;
+src:url('MonsterFriendFore.otf');
+}
+
+@font-face
+{
+font-family: monstermash;
+src:url('ff/MonsterMash.ttf');
+}
+
+@font-face
+{
+font-family: rockmod;
+src:url('ff/RockMODUS039.ttf');
+}
+
+@font-face
+{
+font-family: rockbucket;
+src:url('ff/RockBuchet-Regular.otf');
+}
+
+@font-face
+{
+font-family: rockin;
+src:url('ff/gomarice_rockin_record.ttf');
+}
+
+@font-face
+{
+font-family: rocko;
+src:url('ff/rocko.ttf');
+}
+
+@font-face
+{
+font-family: rocksg;
+src:url('ff/gomarice_rocks.ttf');
+}
+
+@font-face
+{
+font-family: scarm;
+src:url('ff/SCARM__.TTF');
+}
+
+@font-face
+{
+font-family: bad;
+src:url('ff/BAD.ttf');
+}
+
+@font-face
+{
+font-family: viresg;
+src:url('ff/Vires Gollem.otf');
+}
+
+@font-face
+{
+font-family: bboys;
+src:url('ff/Bad Boys.ttf');
+}
+
+#date-div
+{
+position:relative;
+top: -200px;
+left: 340px;
+
+}
+
+#para
+{
+position: absolute;
+color: black;
+font-size: 45px;
+font-family: "rocko","rocksg";
+}
+
+#para1
+{
+position: absolute;
+left: 340px;
+font-family: "rockin";
+color: rgb(0,0,0);
+font-size: 30px;
+
+#slider
+{
+border-radius: 5px;
+border: 0.1px solid #00DFFF;
+
+}
+
+}
+div::-moz-selection
+{
+background-color: green;
+color: #ffffff;
+}
+
+p::-moz-selection
+{
+background-color: green;
+color: #ffffff;
+}
+
+#next
+{
+background-color: #00FDDD;
+border: 0px solid #000000;
+border-radius: 4px;
+width: 50px;
+height: 20px;
+font-size: 10px;
+font-family: "rockin";
+}
+
+#next:hover
+{
+position: relative;
+top: 1px;
+left: -1px;
+width: 52px;
+height: 22px;
+cursor: pointer;
+font-size: 14px;
+}
+
+#prev
+{
+background-color: #00FDDD;
+border: 0px solid #000000;
+border-radius: 4px;
+width: 50px;
+height: 20px;
+font-size: 10px;
+font-family: "rockin";
+}
+
+#prev:hover
+{
+position: relative;
+top: 1px;
+left: -1px;
+width: 52px;
+height: 22px;
+cursor: pointer;
+font-size: 14px;
+}
+
+#container
+{
+background:white;
+height:200px;
+width:200px;
+position:relative;
+}
+
+body
+{
+background-image: url(61475.jpg);
+background-color: #4169E1;
+background-attachment: fixed;
+background-size: 1288px 700px; 
+}
+
+.d1
+{
+position: relative;
+top: -22px;
+left: -5px;
+border-radius: 13px;
+height: 120px;
+width: 100%;
+background-color: rgba(255,255,255,0.4);
+box-shadow: 2px 2px 1px 1px #00FFFF,4px 4px 1px 1px hsl(307, 80%, 61%);
+}
+
+.s1
+{
+position: absolute;
+top: 6px;
+left: 30px;
+}
+
+span
+{
+font-family: "Matura MT Script Capitals";
+font-size:100px;
+color: #42C0DD;
+text-align:100px;
+vertical-align:10px;
+text-decoration:blink;
+text-shadow: hsl(135, 53%, 77%) -0.5pc -0.5pc 5pc ;
+letter-spacing:2px;
+}
+
+.text
+{
+background-color: rgba(255,255,255,0.2);
+position: relative;
+top: 50px;
+left: 520px;
+color: #00BFFF;
+font-size: 24px;
+padding: 8px;
+font-family: "minimal";   
+border-radius: 22px;
+border: 0px solid #C0C0C0;
+width: 300px;
+}
+
+.text:hover
+{
+cursor:pointer;
+box-shadow: 0px 0px 25px #000000, inset 0px 0px 1px rgba(255,255,255,0.1);
+}
+
+.dawn
+{
+position: relative;
+border-radius: 254px;
+left: 50px;
+}
+
+#car
+{
+height:70px;
+width:70px;
+position:absolute;
+//background:red;
+//left:20px;
+}
