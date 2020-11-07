@@ -995,4 +995,133 @@ The following example skews the <div> element by 30 degrees along the X-axis:
 transform: skew(30deg);
 
 If the second parameter is not specified, it has a zero value.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Multiple Transforms
+
+Multiple transforms can be used at once. Rotating and scaling the size of an element at the same time is an example of that.
+Applying multiple transforms to an element is simple; just separate them using spaces.
+
+Here's an example with two transforms defined:
+transform: rotate(45deg) translate(100px);
+
+If you use commas to separate the functions, none of the functions will be applied, so keep in mind not to use commas.
+
+
+The scale() Method
+
+The scale() method increases or decreases the size of an element, according to the parameters given for the width and height. 1 stands for the original size, 2 for twice the original size, and so on.
+
+In the example below, we decreased the first div by the factor 0.7 both horizontally and vertically, and increased the second div by a factor of 1.5 horizontally and vertically.
+
+If only one parameter is passed to the scale() method, it will apply that factor for both the height and the width.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CSS3 Animations
+
+An animation lets an element gradually change from one style to another.
+You can change as many CSS properties as you want to, as many times you want to.
+Keyframes hold the styles the element will have at certain times
+
+The @keyframes Rule
+
+When you specify CSS styles inside the @keyframes rule, the animation will gradually change from the current style to the new style at certain times.
+To get an animation to work, you must bind the animation to an element.
+
+The following example will change the background color of an element three times: when the animation is 50% complete, 70% complete, and when the animation is 100% complete.
+
+The CSS:@keyframes example {
+   0%  {background-color: red;}
+   50%  {background-color: yellow;}
+   70%  {background-color: blue;}
+   100% {background-color: green;}
+}
+example is the name of the animation. You can choose any name for your animation.
+
+
+The @keyframes Rule
+
+As an alternative to using percentages, you can use from and to keywords, where:
+from is a starting offset of 0%
+to is an ending offset of 100%.
+
+The two examples below are equivalent, and produce the same result: @keyframes colorchange {
+   0% {background-color: red;}
+   100% {background-color: green;}
+}
+@keyframes colorchange {
+   from {background-color: red;}
+   to {background-color: green;}
+}
+colorchange is the animation name.
+
+
+The @keyframes Rule
+
+To get an animation to work, you must bind the animation to an element.
+In the example below, the animation lasts one second, and changes the background color of the red div to green and blue.
+div {
+   width: 100px;
+   height: 100px;
+   background-color: red;
+   animation-name: colorchange;
+   animation-duration: 1s;
+}
+@keyframes colorchange {
+   0% {background-color: red;}
+   50% {background-color: green;}
+   100% {background-color: blue;}
+} 
+
+If the animation-duration property is not specified, the animation will have no effect, because the default value is 0.
+
+
+
+
+
+
+The animation-name Property
+
+animation-name property defines which animation to use.
+In this example, the name of the animation is set to colorchange, which matches the defined keyframes.
+
+
+The animation-duration property specifies the duration of the selected animation in seconds.
+If the animation name does not match any keyframe rule, the animation will not execute.
+
+
+Animation Properties
+
+The animation-timing-function specifies the speed curve of an animation. It can have the following values:
+ease - specifies an animation with a slow start, then fast, then end slowly (this is default)
+linear - specifies an animation with the same speed from start to end
+ease-in - specifies an animation with a slow start
+ease-out - specifies an animation with a slow end
+ease-in-out - specifies an animation with a slow start and end
+cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function
+
+The animation-delay and animation-duration values can be defined in seconds (s) or milliseconds (ms).
 */

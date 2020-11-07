@@ -1,16 +1,76 @@
+.link-span
+{
+word-space:3px;
+}
+
 .lang-div
 {
 position: relative;
-top: 580px;
+top: 500px;
 color: #A9A9A9;
 background-color: #FFFFFF;
-width: 1110px;
+width: 1260px;
+height: 180px;
 }
 
 .lang-p
 {
 position: absolute;
 top: 30px;
+}
+.lang-s
+{
+position: absolute;
+left: 150px;
+top: 20px;
+font-family: "Arial narrow";
+font-size: 13px;
+}
+
+.lang-but
+{
+position: absolute;
+left: 600px;
+top: 18px;
+}
+
+.link-span
+{
+position: absolute;
+left: 150px;
+top: 60px;
+font-family: "Arial narrow";
+font-size: 14px;
+}
+
+.extra-link
+{
+text-decoration: none;
+color: #A9A9A9;
+}
+
+.extra-link:hover
+{
+text-decoration: underline;
+}
+
+.lang-lin
+{
+position: relative;
+left: 150px;
+top: 50px;
+width: 900px;
+
+}
+
+.fb-2020
+{
+position:absolute;
+top: 150px;
+left: 150px;
+font-family: "Arial narrow";
+font-size: 11px;
+
 }
 
 body
