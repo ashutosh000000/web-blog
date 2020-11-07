@@ -1124,4 +1124,94 @@ ease-in-out - specifies an animation with a slow start and end
 cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function
 
 The animation-delay and animation-duration values can be defined in seconds (s) or milliseconds (ms).
+
+Animation Properties
+
+The animation-timing-function specifies the speed curve of an animation. It can have the following values:
+ease - specifies an animation with a slow start, then fast, then end slowly (this is default)
+linear - specifies an animation with the same speed from start to end
+ease-in - specifies an animation with a slow start
+ease-out - specifies an animation with a slow end
+ease-in-out - specifies an animation with a slow start and end
+cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function
+
+The CSS syntax looks like this:
+
+The animation-delay and animation-duration values can be defined in seconds (s) or milliseconds (ms).
+
+More Animation Properties
+
+The animation-iteration-count property determines the number of times an animation repeats.
+For example, you can set the animation to run 5 times:
+
+
+To make the animation repeat forever, just use the infinite value:
+animation-iteration-count: infinite;
+
+If you use 0 or a negative number for the animation-iteration-count, the animation will never start. 
+
+
+
+
+
+
+
+
+
+
+
+
+3D Transforms
+
+Along with the x and y axes, 3D Transforms introduce the Z-axis, which enables 3D manipulations.
+3D Transforms are quite similar to 2D Transforms:
+rotateX(), rotateY() and rotateZ() rotate an element in 3D space around the corresponding axis at a given degree.
+
+The CSS:
+div.X {
+   transform: rotateX(150deg);
+}
+div.Y {
+   transform: rotateY(150deg);
+}
+div.Z {
+   transform: rotateZ(150deg);
+
+You can switch off all transformations applied to an element using the none function: transform: none;
+
+
+
+Translations
+
+3D translate methods allow you to move the element horizontally (translateX), vertically (translateY) and into or out of the screen (translateZ), using any CSS length units (px, em, %, etc.). Positive values moves the element toward the viewer, negative values away.
+
+The CSS:
+#mybox1 {
+   transform: translateX(29px) 
+     translateY(5em) 
+     translateZ(-13px);
+}
+
+
+The translate3d() method allows us to pass the x, y, and z offsets, all at once and in the following order:
+#mybox1 {
+   transform: translate3d(-20px, 4em, 10px);
+}
+
+
+Translation of an element is similar to relative positioning - it doesn't affect the document's flow. The translated element will keep its position in the flow and will only appear to have moved.
+
+Perspective
+
+Perspective defines how the depth of the 3D scene is rendered. Think of perspective as a distance from the viewer to the object. The greater the value, the further the distance, so the less intense the visual effect.
+When defining the perspective property for an element, it is the child elements that get the perspective view, not the element itself.
+
+div.empty-div {
+   perspective: 100px;
+}
+div.green-div {
+   transform: rotateX(45deg);
+}
+
+The perspective property only affects 3D transformed elements.
 */
