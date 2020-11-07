@@ -957,4 +957,42 @@ Negative value will result in a counter clockwise rotation.
 Using Negative Values
 
 As previously mentioned, using a positive value will rotate an element clockwise, and using a negative value will rotate the element counter-clockwise. 
+
+
+
+
+
+
+
+
+
+
+
+
+transform-origin
+
+The transform-origin property allows you to change the position of transformed elements. The default value for the property is 50% 50%, which corresponds to the center of the element.
+In the example below, we use the transform-origin property together with transform-rotate. The origin of the x-axis (horizontal) is set to 25% from the left. The origin for the y-axis (vertical) is set to 75% from above.
+
+
+0 0 is the same value as top left, and 100% 100% is the same value as bottom right.
+The transform-origin property must be used together with the transform property.
+
+
+
+The translate() Method
+
+The translate() method moves an element from its current position (according to the parameters given for the x-axis and the y-axis). Positive values will push an element down and to the right of its default position, while negative values will pull an element up and to the left of its default position.
+
+An element can also be moved by setting the margins or by positioning the element, although translate is a better choice for animating elements.
+
+
+The skew() Method
+
+The skew() method skews an element along the x-axis and the y-axis by the given angles.
+
+The following example skews the <div> element by 30 degrees along the X-axis:
+transform: skew(30deg);
+
+If the second parameter is not specified, it has a zero value.
 */

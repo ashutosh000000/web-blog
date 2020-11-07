@@ -1,6 +1,22 @@
+.lang-div
+{
+position: relative;
+top: 580px;
+color: #A9A9A9;
+background-color: #FFFFFF;
+width: 1110px;
+}
+
+.lang-p
+{
+position: absolute;
+top: 30px;
+}
+
 body
 {
 background-color: #F5F5F5;
+width: 1130px;
 }
 
 .d1
@@ -36,17 +52,17 @@ letter-spacing: 1nm;
 .form-div
 {
 float: right;
-height: 357px;
+height: 347px;
 width: 396px;
-box-shadow: 0px 0px 15px #DCDCDC;
+box-shadow: 2px 5px 15px #D3D3D3;
 background-color: #FFFFFF;
-border-radius: 6px;
+border-radius: 9px;
 }
 
 .form
 {
 position: relative;
-right: 160px;
+right: 10px;
 top: -260px;
 
 }
@@ -56,7 +72,7 @@ top: -260px;
 float: right;
 position: relative;
 top: 300px;
-left: 205px;
+left: 340px;
 color: #000000;
 font-family: "Arial";
 font-size: 15px;
@@ -154,7 +170,7 @@ text-decoration:underline;
 .new-ac
 {
 position: relative;
-top: 100px;
+top: 90px;
 left: 98px;
 font-family: "Arial";
 font-size: 19px;
@@ -176,7 +192,7 @@ cursor:pointer;
 {
 
 position: relative;
-top: 80px;
+top: 70px;
 width: 375px;
 color: #696969;
 border: 0.1px solid #D3D3D3; 
