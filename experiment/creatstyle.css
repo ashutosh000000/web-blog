@@ -1,0 +1,122 @@
+/*.cp-div
+{
+position: relative;
+top: -10px;
+left: -10px;
+width: 1299px;
+height: 740px;
+background-color: #F5F5F5;
+}*/
+
+body
+{
+background-color: #F5F5F5;
+width: 800px;
+height: 760px;
+}
+
+.logo-bg
+{
+position: relative;
+left: -10px;
+top: -10px;
+height: 82px;
+width: 1289px;
+background-color: rgb(255,255,255);
+}
+
+.logo
+{
+position: absolute;
+left: 140px;
+top: 14px;
+}
+
+.sign-up-b
+{
+position: absolute;
+left: 343px;
+top: 37px;
+font-family: "Arial","Arial Narrow";
+letter-spacing: -1px;
+color: #FFFFFF;
+background-color: #00FA9A;
+border-radius: 2px;
+border: none;
+padding: 6px;
+font-weight: bold;
+}
+
+.sign-up
+{
+position: absolute;
+top: 35px;
+right: 150px;
+color: #1E90FF;
+font-family: "Arial","Arial narrow";
+font-weight: bold;
+font-size: 12px;
+text-decoration: none;
+}
+
+.sign-up2
+{
+position: absolute;
+top: 6px;
+left: 135px;
+}
+
+h3
+{
+font-family: "Arial";
+font-weight: bold;
+}
+
+
+.cp-text
+{
+position: sticky;
+top: 100px; 
+}
+
+.cp-h
+{
+position:relative;
+left: 140px;
+top: 5px;
+color: #000000;
+font-family: "Arial","Arial narrow";
+}
+.cp-span
+{
+position:relative;
+left: 140px;
+font-size: 14px;
+color: #000000;
+font-family: "Arial","Arial narrow";
+fint-weight: bold;
+}
+.b-c
+{
+position: relative;
+}
+
+.b
+{
+float: left;
+position: absolute;
+left: 140px;
+top: 7	0px;
+background-color: #FFFFFF;
+height: 467px;
+width: 495px;
+}
+
+
+
+
+.c
+{
+background-color: #FFFFFF;
+
+}

@@ -207,6 +207,12 @@ background-color: rgba(255,255,255,0.4);
 box-shadow: 2px 2px 1px 1px #00FFFF,4px 4px 1px 1px hsl(307, 80%, 61%);
 }
 
+.svg-line
+{
+width: 700px;
+height: 400px;
+}
+
 .s1
 {
 position: absolute;
@@ -230,7 +236,7 @@ letter-spacing:2px;
 {
 background-color: rgba(255,255,255,0.2);
 position: relative;
-top: 50px;
+top: 80px;
 left: 520px;
 color: #00BFFF;
 font-size: 24px;
@@ -239,6 +245,11 @@ font-family: "minimal";
 border-radius: 22px;
 border: 0px solid #C0C0C0;
 width: 300px;
+}
+.text::-moz-selection
+{
+background-color: green;
+color: #FFFFFF;
 }
 
 .text:hover
