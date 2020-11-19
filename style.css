@@ -92,6 +92,13 @@ font-family: bboys;
 src:url('ff/Bad Boys.ttf');
 }
 
+body
+{
+background-image: url('starss.jpg');
+background-attachment: fixed;
+height: 500px;
+width: 1245px;
+}
 
 p::-moz-selection
 {
@@ -146,6 +153,33 @@ left: 920px;
 border-radius: 9px;
 }
 
+.i-a-image
+{
+position: relative;
+top: -580px;/*-385px*/
+left: 990px;
+z-index: 2; 
+/*transform: translate(0px,110px);
+transition: transform 500ms ease-in-out;
+*/
+transform: translate(0px,114px) rotate(30deg) scale(0.75,0.75) ;
+transform-origin: 0% 0%;
+transition: transform 5s cubic-bezier(0.31,1.38,0,1.85) /*(0,-0.49,1,.98) (1,.86,0,-0.58)(0.31,1.38,0,1.85)*/;
+
+}
+
+/*@keyframes astro-hang
+{
+0%{top: -510px; }
+50%{top: -444px; }
+100%{top: -385px;}
+}
+
+@keyframes astro-float
+{
+from{top: -390px;}
+to{top: -385px;}
+}*/
 
 .d3
 {
