@@ -261,8 +261,15 @@ box-shadow: 0px 0px 25px #000000, inset 0px 0px 1px rgba(255,255,255,0.1);
 .dawn
 {
 position: relative;
-border-radius: 254px;
-left: 50px;
+border-radius: 54px;
+left: 150px;
+top: -900px;
+height: 250px;
+width: 250px;
+z-index: 2;
+ transform: scale(1.25,1.25) ;
+ /* transition-delay: 0s; */
+ transition: transform 2s ease-in-out;
 }
 
 #car
