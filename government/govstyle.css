@@ -1,0 +1,191 @@
+body
+{
+    background-color: #FFFFFF;
+}
+.gov-head-bar
+{
+position: relative;
+top: -10px;
+left: -10px;
+}
+.green-img
+{
+position: absolute;
+z-index: 0;
+}
+
+.gov-bar-image
+{
+    position: absolute;
+}
+.national-a
+{
+    position: absolute;
+    top: -23px;
+    left: -84px;
+    z-index:1;
+background-color: #FFFFFF;
+}
+
+.national-l
+{
+    position: absolute;
+    top: 50px;
+    left: 165px;
+    font-family: "arial";
+    text-decoration: none;
+    position: absolute;
+    color: #FFFFFF;
+    width: 600px;
+}
+
+.caps
+{
+
+    font-family: "Arial";
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    
+}
+
+.f-caps
+{
+    font-family: "Arial";
+    font-size: 16px;
+}
+
+.i-portal
+{
+    position: absolute;
+    left: 1050px;
+    top: 43px;
+background-color: #FFFFFF;
+z-index: 1;
+}
+
+.row
+{
+    position: absolute;
+    top: 180px;
+    left: 80px;
+    background-color: green;
+    height: 80px;
+    width:700px;
+    overflow: hidden;
+}
+.row-1
+{
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+
+.s-icon
+{
+    position:inherit;
+    top: 6px;
+    left: 4px;
+}
+
+.d-search
+{
+    position: inherit;
+    left: 40px;
+    top: -35px;
+}
+.text-s
+{
+position: absolute;
+font-family: "Arial";
+font-size: 17px;
+font-weight: bold;
+}
+
+.text-government
+{position: inherit;
+    top: -10px;
+    font-family: "Arial narrow";
+    font-size: 20px;
+}
+
+.search-bar
+{
+    position: inherit;
+    left: 20px;
+    top: -20px;
+    border: 0px;
+    font-family: "arial narrow";
+    font-style: italic;
+    letter-spacing: 5nm;
+    word-spacing: 3px;
+    font-size: 14px;
+    padding: 14px 110px 11px 8px;
+
+}
+
+.search-button
+{
+    position: inherit;
+    height: 42px;
+    width: 42px;
+    top: -15px;
+    left: 16px;
+    border: 0px;
+    background-color: skyblue;
+}
+.search-button:hover
+{
+    background-color: blue;
+    cursor: pointer;
+}
+
+.button-img
+{
+    padding: 0px;
+}
+
+.d-advance-search
+{
+    position: inherit;
+    left: 580px;
+    font-family: "Arial";
+    top: -100px;
+}
+
+
+
+ .advance-optn
+{    
+   background-color:#FFFFFF;
+    z-index: 4; 
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.down-b
+{
+    padding: 0px 0px 0px 20px ;
+}
+/*
+
+
+ */
+
+/* */
+
+
+/* .i-portal:hover
+{
+    cursor:pointer;
+} */
+
+
+/* 
+
+
+
+
+
+ */
