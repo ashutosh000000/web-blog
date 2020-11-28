@@ -51,6 +51,7 @@ font-weight: bold;
 cursor: pointer;
 }
 
+
 .sign-up
 {
 position: absolute;
@@ -62,14 +63,25 @@ font-weight: bold;
 font-size: 12px;
 text-decoration: none;
 cursor: pointer;
+border: 0px;
+background-color: rgba(255,255,255,0);
+
 }
+
+.sign-up:hover> .fancy-login
+{
+    /* display: block; */
+    visibility: visible;
+}
+
 
 .sign-up2
 {
 cursor: pointer;
 position: absolute;
-top: 6px;
+top: 5px;
 left: 135px;
+padding: 0px 0px 0px 8px;
 }
 
 h3
@@ -80,12 +92,15 @@ font-weight: bold;
 
 .fancy-login
 {
+    /* display: none; */
+    visibility: hidden;
 position: relative;
 
 }
 
 .square
 {
+    /* visibility: hidden; */
 position: absolute;
 right: 145px;
 top: -15px;
@@ -98,6 +113,7 @@ z-index: 4;
 
 .rect-login
 {
+    /* visibility: hidden; */
 position: absolute;
 right: 130px;
 top: -10px;

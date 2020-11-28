@@ -1,0 +1,17 @@
+.button
+{
+    color: orange;
+    background-color:white;
+    font-family: 'arial narrow';
+    font-size: 20px;
+    padding: 5px; 
+}
+.button:active
+{
+    background-color: red;
+}
+
+.button:-webkit-validation-bubble-arrow-clipper
+{
+    background-color: green;
+}
